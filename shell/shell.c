@@ -21,9 +21,11 @@ int executeThreaded(char *string) {
   int quitCheck = 0;                                                                      //This var turns 1 when it sees quit function.
   const char s[2] = ";";
   char *token;
+  char *tester;
   token = strtok(string, s);                                                              //Get the first token if exist then loop through all tokens.
   while (token != NULL) {
-    if (strcmp(token, "quit") == 0) {
+    tester = strstr(token, "quit");
+    if (tester != NULL) {
       quitCheck = 1;
     } else {
       pid = fork();                                                                       //Forking the system call to make process run similtanuisly.
