@@ -4,8 +4,12 @@ Shell.c has two main usage. One is interactive mod and the other one is batch mo
 To us it in interactive mod you can download the compiled shell or you may compile the shell.c file on you own preferably using
 gcc compiler. Just executing the compiled file opens the program in interactive mode.
 To use the shell in batch mode all you have to do is giving the filepath to the program at execution(start up).
+
 Example1: ./shell ~~ Open in interactive mode.
+
 Example2: ./shell [pathToBatch] ~~ Open program in batch mode.
+
+
 
 PS: When reading batch file line by line, if shell sees quit command it will quit.
 
