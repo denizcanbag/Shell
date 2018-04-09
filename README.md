@@ -13,6 +13,6 @@ PS2:While in interactive mode if arguments includes simultaneously running comma
 finish the other child process then kills the parent program.
 Example For PS2: ls;quit;ls -a ~~ will issue the commands ls and ls -a simultaneously then quit.
 
-Cd commands working like a charm :) and theme of the shell is pirate.
+Cd command is working like a charm :) and theme of the shell is pirate.
 
 
