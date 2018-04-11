@@ -33,7 +33,7 @@ int executeThreaded(char *string) {
         if (system(token) == -1) {
           perror("pirateShell :( ");
         }
-        exit(1);
+        //exit(0);
       } else if (pid < 0) {                                                               // If true error occured during forking process as our pid is negative.
         perror("pirateShell :( ");
       } else {                                                                            //Waiting for process to finish. This information gethered from Internet as I didnt know how to wait for process to finish.
@@ -148,7 +148,7 @@ void programLoop(void) {
 
 void batchPirate(char *string) {
   FILE *fp;
-  char str[256];
+  char str[512];
   char* filename = string;
   int status = 1;
 
@@ -157,9 +157,9 @@ void batchPirate(char *string) {
     printf("Could not open file %s", filename);
     return 1;
   }
-  while (fgets(str, 257, fp) != EOF && status != 0 && !feof(fp)) {
+  while (fgets(str, 512, fp) != EOF && status != 0 && !feof(fp)) {
     str[strcspn(str, "\n\r")] = 0;
-    //str[strcspn(str, "\r")] = 0;
+    str[strcspn(str, "\r")] = 0;
     printf("------------------------\nCommand Issued: %s\n", str);
     status = pirateCheck(str);
   }
