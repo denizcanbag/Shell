@@ -24,4 +24,4 @@ Example For PS2: ls;quit;ls -a ~~ will issue the commands ls and ls -a simultane
 
 Cd command is working like a charm :) and theme of the shell is pirate.
 
-[X] Solve the infinity loop when batch command which have simultaneous jobs.
+- [x] Solve the infinity loop when batch command which have simultaneous jobs.
