@@ -20,8 +20,10 @@ PS2:While in interactive mode if arguments includes simultaneously running comma
 command it willfinish the other child process then kills the parent program.
 
 Example For PS2: ls;quit;ls -a ~~ will issue the commands ls and ls -a simultaneously then quit.
-```
+``` 
 
-Cd command is working like a charm :) and theme of the shell is pirate.
-
+- [x] Making cd command working like a charm :)
 - [x] Solve the infinity loop when batch command which have simultaneous jobs.
+- [] Improve pirate language.
+
+Theme of the shell is pirate. ☠
