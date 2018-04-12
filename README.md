@@ -5,6 +5,7 @@ To us it in interactive mod you can download the compiled shell or you may compi
 gcc compiler. Just executing the compiled file opens the program in interactive mode.
 To use the shell in batch mode all you have to do is giving the filepath to the program at execution(start up).
 
+# Examples
 Example1: ./shell ~~ Open in interactive mode.
 
 Example2: ./shell [pathToBatch] ~~ Open program in batch mode.
@@ -18,5 +19,3 @@ finish the other child process then kills the parent program.
 Example For PS2: ls;quit;ls -a ~~ will issue the commands ls and ls -a simultaneously then quit.
 
 Cd command is working like a charm :) and theme of the shell is pirate.
-
-Ofcourse shell has a known bug unfortunatly :( It is that if you give ; command on batched file it will loop infinitly because of child process not being relaesing the memory on time so fgets couldnt find the EOF(In theory ofc.) So if you are going to use ; command with batch mode please give quit command too in anywhere of the file so execution can stop after the first iteration.
