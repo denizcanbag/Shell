@@ -6,10 +6,11 @@ gcc compiler. Just executing the compiled file opens the program in interactive 
 To use the shell in batch mode all you have to do is giving the filepath to the program at execution(start up).
 
 # Examples
+```
 Example1: ./shell ~~ Open in interactive mode.
 
 Example2: ./shell [pathToBatch] ~~ Open program in batch mode.
-
+```
 
 # Notes
 PS: When reading batch file line by line, if shell sees quit command it will quit.
