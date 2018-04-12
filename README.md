@@ -13,10 +13,12 @@ Example2: ./shell [pathToBatch] ~~ Open program in batch mode.
 ```
 
 # Notes
+```
 PS: When reading batch file line by line, if shell sees quit command it will quit.
 
 PS2:While in interactive mode if arguments includes simultaneously running commands(seperated with ';') and sees quit command it will
 finish the other child process then kills the parent program.
 Example For PS2: ls;quit;ls -a ~~ will issue the commands ls and ls -a simultaneously then quit.
+```
 
 Cd command is working like a charm :) and theme of the shell is pirate.
